@@ -1,6 +1,6 @@
 # Flip Clock
 
-A stylish and configurable flip clock application built with Rust and SDL2.
+A stylish and configurable flip clock application built with Rust.
 
 ![Gif of Flip Clock](./docs/mocha-sample.gif)
 
@@ -13,7 +13,7 @@ A GPU-accelerated, highly customizable flip clock application written in Rust, i
 ## Features
 
 * **Smooth Flip Animation:** Visually engaging card-flip animation when time updates
-* **Extensive Customization:** Control colors, opacity, borders, animations, and more
+* **Customization:** Control colors, borders, animations.
 * **Display Options:**
   * 12/24 hour time format
   * Optional seconds display
@@ -56,7 +56,6 @@ If you just want to install the application, already have Cargo working on your 
 cargo install --git https://github.com/NotAsBraveAsLancelot/flipclock-rs
 ```
 
-
 ## Configuration
 
 The application uses a TOML configuration file located at `~/.config/flipclock/config.toml`.
@@ -95,7 +94,6 @@ close_on_any_input = true
 ```toml
 [theme]
 background_color = "#1E1E2E"
-background_opacity = 1.0
 card_color = "#313244"
 card_border_color = "#CBA6F7"
 card_border_size = 2
@@ -110,7 +108,6 @@ font_path = "/usr/share/fonts/TTF/JetBrainsMono-Bold.ttf"
 ```toml
 [theme]
 background_color = "#2E3440"
-background_opacity = 1.0
 card_color = "#3B4252"
 card_border_color = "#88C0D0"
 card_border_size = 2
@@ -144,9 +141,7 @@ font_path = "/usr/share/fonts/TTF/CaskaydiaCoveNerdFont-Regular.ttf"
 | Option | Type | Description | Default |
 |--------|------|-------------|---------|
 | `background_color` | String (hex) | Background color of the window | `"#0F0F0F"` |
-| `background_opacity` | Float | Background opacity (0.0-1.0) | `0.8` |
 | `card_color` | String (hex) | Color of the flip cards | `"#000000"` |
-| `card_opacity` | Float | Opacity of the flip cards (0.0-1.0) | `0.4` |
 | `card_border_color` | String (hex) | Color of the card borders | `"#FFFFFF"` |
 | `card_border_size` | Integer | Thickness of card borders in pixels | `2` |
 | `card_rounded_corners` | Boolean | Whether cards have rounded corners | `true` |
