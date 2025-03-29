@@ -1,0 +1,6 @@
+# General Rust ignores
+target/
+Cargo.lock
+
+# Zed-specific files
+.zed/
